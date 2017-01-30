@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+
+    <meta charset="UTF-8">
+    <title>NeverTLS - For When HTTP is Hip Again</title>
+
+    <style>
+      body {
+      font-family: Montserrat, helvetica, arial,
+      sans-serif;
+      font-size: 16x;
+      color: #444444;
+      margin: 0;
+      }
+      h2 {
+      font-weight: 700;
+      font-size: 1.6em;
+      margin-top: 30px;
+      }
+      p {
+      line-height: 1.6em;
+      }
+      header {
+      background-color: #42C0FD;
+      color: #FFFFFF;
+      padding: 10px 0 10px 0;
+      font-size: 2.2em;
+      text-align: center;
+      }
+      main {
+      max-width: 650px;
+      margin: 20px auto 20px auto;
+      padding-left: 15px;
+      padding-right: 15px
+      }
+      <!-- CSS from Mark Webster
+      https://gist.github.com/markcwebster/9bdf30655cdd5279bad13993ac87c85d
+      -->
+    </style>
+    
+  </head>
+  
+  <body>
+
+    <header>
+        <h1>NeverTLS</h1>
+    </header>
+
+    <main>
+
+      <h2>About</h2>
+
+      <p>
+        This website is a lot
+        like <a href="http://neverssl.com">neverssl.com</a>, but with
+        the proper protocol name. It provides an intentionally
+        insecure website for you to visit when you need to allow
+        someone to hijack your traffic for the purposes of logging
+        into the local wifi. Simply
+        type "<a href="/">http://nevertls.com</a>" in
+        your URL bar and you'll be redirected to the local captive
+        portal login screen.
+      </p>
+        
+      <h2>Under the Hood</h2>
+
+      <p>
+        <a href="/">nevertls.com</a> does not use TLS
+        (the precursor to which was known as SSL) to serve your
+        connection. In other words, it uses the old, insecure HTTP
+        protocol instead of the newer, secure HTTPS
+        protocol. Normally this is a very bad idea (and hopefully
+        your browser is getting better and warning you about the
+        insecure nature of this website).
+      </p>
+
+      <p>
+        Unfortunately, some networks use a form of authentication that
+        requires them to hijack your connection for the purpose of
+        redirecting you to their local login page (often called a
+        "<a href=https://en.wikipedia.org/wiki/Captive_portal">captive
+        portal</a>"). TLS/HTTPS rightfully prevents this from
+        happening. As the web continues to move toward using TLS/HTTPS
+        everywhere, it becomes more difficult to connect to these
+        kinds of networks. Thus, having an intentionally insecure page
+        such as this one
+        (or <a href="http://neverssl.com">neverssl.com</a>) that you
+        can visit when you need to connect to such a network is
+        useful, at least until networks move to better forms of
+        authentication.
+      </p>
+
+      <h2>TLS, HTTPS, and the Secure Web</h2>
+
+      <p>
+        
+      </p>
+      
+    </main>
+        
+  </body>
+</html>
+
+<!--  LocalWords:  NeverTLS helvetica arial px FFFFFF neverssl HTTPS
+ -->
+<!--  LocalWords:  nevertls
+ -->
